@@ -3,6 +3,8 @@
 //
 #include <SFML/Graphics.hpp>
 #include <vector>
+
+#include "Player.h"
 #ifndef BALL_H
 #define BALL_H
 using namespace std;
@@ -10,10 +12,12 @@ using namespace std;
 
 class Ball: public sf::Drawable {
   private:
+    bool collisionhit1 = false;
+  bool collisionhit2 = false;
     float speed;
     double radius;
     sf::Vector2f position;
-  sf::FloatRect boundingBox = ball.getGlobalBounds();
+
     sf::CircleShape ball;
 
 
@@ -27,7 +31,10 @@ class Ball: public sf::Drawable {
     Ball(double radius, sf::Vector2f position);
     void setSpeed(float v);
     int getSpeed();
-    void Move(sf::Vector2f& position,float speed);
+    void setcollission1();
+    void setcollission2();
+    void move(sf::Vector2f& position,float speed);
+    void collisiondetection(Player& player,Player& player2);
 
 };
 

@@ -53,8 +53,9 @@ int main()
 
         sf::Time elapsed = clock1.getElapsedTime(); // Zeit seit Start
         float timeInSeconds = elapsed.asSeconds();
+        ball1.collisiondetection(player1,player2);
+        ball1.move(dir,4*(1+timeInSeconds/1000000));
 
-        ball1.Move(dir,4*(1+timeInSeconds/1000000));
         player1.playermovement1();
         player2.playermovement2();
         // Process events
