@@ -14,12 +14,12 @@ class Player : public sf::Drawable{
         float width;
         sf::Vector2f playerpos;
         int movspeed;
-        sf::FloatRect boundingBox = player.getGlobalBounds();
-        sf::RectangleShape player;
+
+
 
 
     public:
-
+    sf::RectangleShape player;
     Player(float width, float height,sf::Vector2f playerpos);
 
     void playermovement1();
