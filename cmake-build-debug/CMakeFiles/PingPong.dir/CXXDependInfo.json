@@ -1,0 +1,21 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/sadri/CLionProjects/PingPong/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/sadri/CLionProjects/PingPong",
+	"dir-top-bld" : "C:/Users/sadri/CLionProjects/PingPong/cmake-build-debug",
+	"dir-top-src" : "C:/Users/sadri/CLionProjects/PingPong",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\sadri\\.vcpkg-clion\\vcpkg\\installed\\x64-windows\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/sadri/CLionProjects/PingPong/cmake-build-debug/CMakeFiles/PingPong.dir"
+}

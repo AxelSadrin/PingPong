@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\PingPong.dir\\main.cpp.obj",
+            "outputs": [
+                "C:\\Users\\sadri\\CLionProjects\\PingPong\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\PingPong.dir\\main.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

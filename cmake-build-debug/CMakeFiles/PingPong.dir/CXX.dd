@@ -1,0 +1,7 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\PingPong.dir\main.cpp.obj: dyndep
+
+build CMakeFiles\PingPong.dir\Ball.cpp.obj: dyndep
+
+build CMakeFiles\PingPong.dir\Player.cpp.obj: dyndep
+
