@@ -13,14 +13,15 @@ sf::Vector2f player1pos(1570.f, 200.f);
 sf::Vector2f player2pos(0.f, 200.f);
 sf::Vector2f dir(0.01f,0.01f);
 sf::Clock clock1;
-
+float player1angle;
+float player2angle;
 
 
 int main()
 {
     Ball ball1 =  Ball(10.0f,ballposition);
-    Player player1 = Player(30,400,player1pos);
-    Player player2 = Player(30.0f,400.0f,player2pos);
+    Player player1 = Player(30,300,player1pos,1,2);
+    Player player2 = Player(30,300,player2pos,1,2);
     // Create the main window
     sf::RenderWindow window(sf::VideoMode({WINDOW_WIDTH, WINDOW_HEIGHT}), "PingPong");
 
@@ -53,8 +54,12 @@ int main()
 
         sf::Time elapsed = clock1.getElapsedTime(); // Zeit seit Start
         float timeInSeconds = elapsed.asSeconds();
+        player1angle= player1.getangle();
+
+
+        player2angle = player2.getangle();
         ball1.collisiondetection(player1,player2);
-        ball1.move(dir,4*(1+timeInSeconds/1000000));
+        ball1.move(dir,4*(1+timeInSeconds/10),player1angle,player2angle);
 
         player1.playermovement1();
         player2.playermovement2();

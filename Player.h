@@ -13,21 +13,25 @@ class Player : public sf::Drawable{
         float height;
         float width;
         sf::Vector2f playerpos;
-        int movspeed;
+        float angle = 1;
+        float speed = 3;
 
 
 
 
     public:
     sf::RectangleShape player;
-    Player(float width, float height,sf::Vector2f playerpos);
+    Player(float width, float height,sf::Vector2f playerpos,float angle,float speed);
 
     void playermovement1();
     void playermovement2();
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
         target.draw(player, states);
     }
-
+    float getangle();
+    void setangle(float angle);
+    float getspeed();
+    void setspeed(float speed);
 };
 
 

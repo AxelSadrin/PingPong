@@ -33,7 +33,7 @@ class Ball: public sf::Drawable {
     int getSpeed();
     void setcollission1();
     void setcollission2();
-    void move(sf::Vector2f& position,float speed);
+    void move(sf::Vector2f& position,float speed,float player1speedangle,float player2speedangle);
     void collisiondetection(Player& player,Player& player2);
 
 };

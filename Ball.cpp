@@ -52,7 +52,8 @@ void Ball::collisiondetection(Player& player,Player& player2) {
     }
 
 }
-void Ball::move(sf::Vector2f& direction,float speed) {
+void Ball::move(sf::Vector2f& direction,float speed,float player1speedangle,float player2speedangle) {
+
     direction = direction*speed;
     ball.setFillColor(sf::Color(0, 0, 0));
     ball.setPosition(ball.getPosition()+direction);
@@ -70,12 +71,14 @@ void Ball::move(sf::Vector2f& direction,float speed) {
 
         direction.x = direction.x*-1;
         direction.y = direction.y* -1;
+        direction.x = direction.x * player1speedangle;
         ball.setPosition(ball.getPosition()+direction);
         collisionhit1 = false;
     }
     if(collisionhit2) {
         direction.x = direction.x*-1;
         direction.y = direction.y* -1;
+        direction.x = direction.x * player2speedangle;
         ball.setPosition(ball.getPosition()+direction);
         collisionhit2 = false;
     }
