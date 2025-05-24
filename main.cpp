@@ -46,7 +46,11 @@ int main()
 
         player2angle = player2.getangle();
         ball1.collisiondetection(player1,player2);
-        ball1.move(dir,4*(1+timeInSeconds/10),player1angle,player2angle);
+        if(timeInSeconds<40) {
+            ball1.move(dir,4*(1+timeInSeconds/10),player1angle,player2angle);
+        } else {
+            ball1.move(dir,4*(1+40/10),player1angle,player2angle);
+        }
         score.goalScore(ball1,manager,player1,player2);
         player1.playermovement1();
         player2.playermovement2();

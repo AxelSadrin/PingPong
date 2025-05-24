@@ -67,7 +67,7 @@ void Ball::move(sf::Vector2f& direction,float speed,float player1speedangle,floa
         direction.y = direction.y* -1;
         ball.setPosition(ball.getPosition()+direction);
     }
-    direction = direction/speed;
+
     if(collisionhit1) {
 
         direction.x = direction.x*-1;
@@ -75,6 +75,7 @@ void Ball::move(sf::Vector2f& direction,float speed,float player1speedangle,floa
         direction.x = direction.x * player1speedangle;
         ball.setPosition(ball.getPosition()+direction);
         collisionhit1 = false;
+        direction.x = direction.x / player1speedangle;
     }
     if(collisionhit2) {
         direction.x = direction.x*-1;
@@ -82,7 +83,8 @@ void Ball::move(sf::Vector2f& direction,float speed,float player1speedangle,floa
         direction.x = direction.x * player2speedangle;
         ball.setPosition(ball.getPosition()+direction);
         collisionhit2 = false;
+        direction.x = direction.x / player2speedangle;
     }
 
-
+    direction = direction/speed;
 }
