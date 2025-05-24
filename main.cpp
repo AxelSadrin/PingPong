@@ -14,7 +14,7 @@ sf::Vector2f ballposition(800.f, 400.f);
 sf::Vector2f player2pos(1570.f, 200.f);
 sf::Vector2f player1pos(0.f, 200.f);
 sf::Vector2f dir(0.01f,0.01f);
-sf::Vector2f scorepos(750,50);
+sf::Vector2f scorepos(730,50);
 
 
 
@@ -46,10 +46,10 @@ int main()
 
         player2angle = player2.getangle();
         ball1.collisiondetection(player1,player2);
-        if(timeInSeconds<40) {
+        if(timeInSeconds<25) {
             ball1.move(dir,4*(1+timeInSeconds/10),player1angle,player2angle);
         } else {
-            ball1.move(dir,4*(1+40/10),player1angle,player2angle);
+            ball1.move(dir,4*(1+25/10),player1angle,player2angle);
         }
         score.goalScore(ball1,manager,player1,player2);
         player1.playermovement1();
@@ -64,6 +64,7 @@ int main()
 
 
         window.clear();
+
         window.draw(score);
         window.draw(player1);
         window.draw(player2);

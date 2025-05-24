@@ -17,6 +17,6 @@ void GameManager::resetGame(Ball &ball, Player &player1, Player &player2) {
     player2.player.setPosition(p2pos);
 
     clock1.reset();
-    sf::sleep(sf::seconds(3.f));
+    sf::sleep(sf::seconds(2.f));
 
 }

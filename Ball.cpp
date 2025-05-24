@@ -42,12 +42,12 @@ void Ball::collisiondetection(Player& player,Player& player2) {
     sf::FloatRect boundingballBox = ball.getGlobalBounds();
 
 
-    if (boundingballBox.findIntersection(boundingplayer1box)  && cooldownClock.getElapsedTime().asSeconds() > 1.0f){
+    if (boundingballBox.findIntersection(boundingplayer1box)  && cooldownClock.getElapsedTime().asSeconds() > 0.1f){
         setcollission1();
         cooldownClock.restart();
 
     }
-    if (boundingballBox.findIntersection(boundingplayer2box)&& cooldownClock.getElapsedTime().asSeconds() > 1.0f) {
+    if (boundingballBox.findIntersection(boundingplayer2box)&& cooldownClock.getElapsedTime().asSeconds() > 0.1f) {
         setcollission2();
         cooldownClock.restart();
     }
