@@ -11,7 +11,7 @@
 
 extern const unsigned int WINDOW_WIDTH = 1600;
 extern const unsigned int WINDOW_HEIGHT = 800;
-sf::Clock cooldownClock;
+
 
 
 Ball::Ball(double radius, sf::Vector2f position) {
@@ -40,6 +40,7 @@ void Ball::collisiondetection(Player& player,Player& player2) {
     sf::FloatRect boundingplayer1box = player.player.getGlobalBounds();
     sf::FloatRect boundingplayer2box = player2.player.getGlobalBounds();
     sf::FloatRect boundingballBox = ball.getGlobalBounds();
+
 
     if (boundingballBox.findIntersection(boundingplayer1box)  && cooldownClock.getElapsedTime().asSeconds() > 1.0f){
         setcollission1();

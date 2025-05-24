@@ -13,6 +13,10 @@ add_executable(PingPong main.cpp
         Ball.h
         Ball.cpp
         Player.cpp
-        Player.h)
+        Player.h
+        Score.cpp
+        Score.h
+        GameManager.cpp
+        GameManager.h)
 
 target_link_libraries(PingPong PRIVATE SFML::Graphics SFML::Window SFML::System)

@@ -13,12 +13,12 @@ using namespace std;
 class Ball: public sf::Drawable {
   private:
     bool collisionhit1 = false;
-  bool collisionhit2 = false;
+    bool collisionhit2 = false;
     float speed;
     double radius;
     sf::Vector2f position;
 
-    sf::CircleShape ball;
+
 
 
   virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
@@ -27,7 +27,8 @@ class Ball: public sf::Drawable {
 
 
   public:
-
+    sf::Clock cooldownClock;
+    sf::CircleShape ball;
     Ball(double radius, sf::Vector2f position);
     void setSpeed(float v);
     int getSpeed();

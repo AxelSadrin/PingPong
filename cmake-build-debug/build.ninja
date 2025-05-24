@@ -103,7 +103,43 @@ build CMakeFiles\PingPong.dir\Player.cpp.obj: CXX_COMPILER__PingPong_scanned_Deb
   TARGET_PDB = PingPong.pdb
   dyndep = CMakeFiles/PingPong.dir/CXX.dd
 
-build CMakeFiles\PingPong.dir\CXX.dd | C$:\Users\sadri\CLionProjects\PingPong\cmake-build-debug\CMakeFiles\PingPong.dir\CXXModules.json CMakeFiles\PingPong.dir\main.cpp.obj.modmap CMakeFiles\PingPong.dir\Ball.cpp.obj.modmap CMakeFiles\PingPong.dir\Player.cpp.obj.modmap: CXX_DYNDEP__PingPong_Debug CMakeFiles\PingPong.dir\main.cpp.obj.ddi CMakeFiles\PingPong.dir\Ball.cpp.obj.ddi CMakeFiles\PingPong.dir\Player.cpp.obj.ddi | C$:\Users\sadri\CLionProjects\PingPong\cmake-build-debug\CMakeFiles\PingPong.dir\CXXDependInfo.json
+build CMakeFiles\PingPong.dir\Score.cpp.obj.ddi: CXX_SCAN__PingPong_Debug C$:\Users\sadri\CLionProjects\PingPong\Score.cpp || cmake_object_order_depends_target_PingPong
+  DEP_FILE = CMakeFiles\PingPong.dir\Score.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\PingPong.dir\Score.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -external:IC:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJ_FILE = CMakeFiles\PingPong.dir\Score.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\PingPong.dir\Score.cpp.obj.ddi.i
+
+build CMakeFiles\PingPong.dir\Score.cpp.obj: CXX_COMPILER__PingPong_scanned_Debug C$:\Users\sadri\CLionProjects\PingPong\Score.cpp | CMakeFiles\PingPong.dir\Score.cpp.obj.modmap || cmake_object_order_depends_target_PingPong CMakeFiles\PingPong.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\PingPong.dir\Score.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -external:IC:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJECT_DIR = CMakeFiles\PingPong.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPong.dir
+  TARGET_COMPILE_PDB = CMakeFiles\PingPong.dir\
+  TARGET_PDB = PingPong.pdb
+  dyndep = CMakeFiles/PingPong.dir/CXX.dd
+
+build CMakeFiles\PingPong.dir\GameManager.cpp.obj.ddi: CXX_SCAN__PingPong_Debug C$:\Users\sadri\CLionProjects\PingPong\GameManager.cpp || cmake_object_order_depends_target_PingPong
+  DEP_FILE = CMakeFiles\PingPong.dir\GameManager.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\PingPong.dir\GameManager.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -external:IC:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJ_FILE = CMakeFiles\PingPong.dir\GameManager.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\PingPong.dir\GameManager.cpp.obj.ddi.i
+
+build CMakeFiles\PingPong.dir\GameManager.cpp.obj: CXX_COMPILER__PingPong_scanned_Debug C$:\Users\sadri\CLionProjects\PingPong\GameManager.cpp | CMakeFiles\PingPong.dir\GameManager.cpp.obj.modmap || cmake_object_order_depends_target_PingPong CMakeFiles\PingPong.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\PingPong.dir\GameManager.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -external:IC:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJECT_DIR = CMakeFiles\PingPong.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPong.dir
+  TARGET_COMPILE_PDB = CMakeFiles\PingPong.dir\
+  TARGET_PDB = PingPong.pdb
+  dyndep = CMakeFiles/PingPong.dir/CXX.dd
+
+build CMakeFiles\PingPong.dir\CXX.dd | C$:\Users\sadri\CLionProjects\PingPong\cmake-build-debug\CMakeFiles\PingPong.dir\CXXModules.json CMakeFiles\PingPong.dir\main.cpp.obj.modmap CMakeFiles\PingPong.dir\Ball.cpp.obj.modmap CMakeFiles\PingPong.dir\Player.cpp.obj.modmap CMakeFiles\PingPong.dir\Score.cpp.obj.modmap CMakeFiles\PingPong.dir\GameManager.cpp.obj.modmap: CXX_DYNDEP__PingPong_Debug CMakeFiles\PingPong.dir\main.cpp.obj.ddi CMakeFiles\PingPong.dir\Ball.cpp.obj.ddi CMakeFiles\PingPong.dir\Player.cpp.obj.ddi CMakeFiles\PingPong.dir\Score.cpp.obj.ddi CMakeFiles\PingPong.dir\GameManager.cpp.obj.ddi | C$:\Users\sadri\CLionProjects\PingPong\cmake-build-debug\CMakeFiles\PingPong.dir\CXXDependInfo.json
 
 
 # =============================================================================
@@ -113,7 +149,7 @@ build CMakeFiles\PingPong.dir\CXX.dd | C$:\Users\sadri\CLionProjects\PingPong\cm
 #############################################
 # Link the executable PingPong.exe
 
-build PingPong.exe: CXX_EXECUTABLE_LINKER__PingPong_Debug CMakeFiles\PingPong.dir\main.cpp.obj CMakeFiles\PingPong.dir\Ball.cpp.obj CMakeFiles\PingPong.dir\Player.cpp.obj | C$:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib
+build PingPong.exe: CXX_EXECUTABLE_LINKER__PingPong_Debug CMakeFiles\PingPong.dir\main.cpp.obj CMakeFiles\PingPong.dir\Ball.cpp.obj CMakeFiles\PingPong.dir\Player.cpp.obj CMakeFiles\PingPong.dir\Score.cpp.obj CMakeFiles\PingPong.dir\GameManager.cpp.obj | C$:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\Users\sadri\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

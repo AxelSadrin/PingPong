@@ -5,3 +5,7 @@ build CMakeFiles\PingPong.dir\Ball.cpp.obj: dyndep
 
 build CMakeFiles\PingPong.dir\Player.cpp.obj: dyndep
 
+build CMakeFiles\PingPong.dir\Score.cpp.obj: dyndep
+
+build CMakeFiles\PingPong.dir\GameManager.cpp.obj: dyndep
+

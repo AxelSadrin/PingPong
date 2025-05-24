@@ -16,6 +16,8 @@ Player::Player(float width, float height, sf::Vector2f playerpos,float angle,flo
     player.setFillColor(sf::Color::White);
     player.setPosition(playerpos);
 
+
+
 }
 void Player::playermovement1() {
     sf::Vector2f down{0,0.07};
@@ -31,7 +33,7 @@ void Player::playermovement1() {
             player.setFillColor(sf::Color(0, 0, 0));
             player.setPosition(player.getPosition()+up*speed);
             player.setFillColor(sf::Color::White);
-            angle = random_float(0.1f,2.0f);
+            angle = random_float(0.4f,1.8f);
             setangle(angle);
         }
 
@@ -44,7 +46,7 @@ void Player::playermovement1() {
             player.setFillColor(sf::Color(0, 0, 0));
             player.setPosition(player.getPosition()+down*speed);
             player.setFillColor(sf::Color::White);
-            angle = random_float(0.1f,2.0f);
+            angle = random_float(0.4f,1.8f);
             setangle(angle);
         }
 
@@ -66,7 +68,7 @@ void Player::playermovement2() {
             player.setFillColor(sf::Color(0, 0, 0));
             player.setPosition(player.getPosition()+up*speed);
             player.setFillColor(sf::Color::White);
-            angle = random_float(0.1f,2.0f);
+            angle = random_float(0.4f,1.8f);
             setangle(angle);
         }
 
@@ -82,7 +84,7 @@ void Player::playermovement2() {
             player.setFillColor(sf::Color(0, 0, 0));
             player.setPosition(player.getPosition()+down*speed);
             player.setFillColor(sf::Color::White);
-            angle = random_float(0.1f,2.0f);
+            angle = random_float(0.4f,1.8f);
             setangle(angle);
 
         }
